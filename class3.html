@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<style>
+
+	/*	body{
+			background-color: skyblue;
+		}*/
+		header{
+			width: 100%;
+			height: 60px;
+			 /*<!-- ye jo height width diya gya hai vo extual me nhi aata hai esliye jb bhi box bnate hain to uska sizing border box kr dete hain -->*/
+           box-sizing: border-box;
+           margin: 0;
+           padding: 0; 
+		}
+		#brand_name{
+			font-family: sans-serif;
+			float: left;
+			font-size: 20px;
+			padding: 6px;
+			color: #ff007d;
+		}
+		#slogan{
+		float: right;
+         padding: 6px;
+        font-family: sans-serif;
+        color: #ff007d;
+        margin-right: 25px;
+
+
+		}
+		nav{
+			width: 100%;
+			height: 110px;
+			box-sizing: border-box;
+			background-color: #ff007d;
+			float: left;
+			padding: 30px;
+		}
+#Search_box{
+
+
+	width: 500px;
+	height: 40px;
+	border-style: none;
+	box-sizing: border-box;
+	float: left;
+	border-style: none;
+	padding: 5px; 
+	font-size: 15px;
+	margin-top: 2px;
+}
+#Search_button{
+	width: 110px;
+	height: 40px;
+	box-sizing: border-box;
+	float: left;
+	border-style: none;
+margin-left: 3px;
+background-color: white;
+	margin-top: 2px;
+
+
+}
+#nav_bar{
+	float: right;
+	width: 600px;
+	height: 40px; 
+	box-sizing: border-box;
+}
+#nav_box{
+	background-color: white;
+	width: 20%;
+	text-align: center;
+}
+a{
+	text-decoration: none;
+	font-family: sans-serif;
+	color: black;
+}
+section{
+	width: 100%;
+	height: 1730px;
+	box-sizing: border-box;
+	/*border-style: solid;
+	border-color: black;
+	border-width: 1px;*/
+	padding: 30PX;
+}
+#first_address{
+	float: left;
+	margin-top: 10PX;
+}
+#first_mobile{
+	float: right;
+		margin-top: 10PX;
+
+}
+#our_sweet{
+	width: 720px;
+	height: 480px;
+	float: left;
+	box-sizing: border-box;
+	border-width: 1px;
+	border-style: solid;
+	border-color: red;
+	clear: left;
+	background-color: #ff007d;
+}
+
+#our_header{
+text-align: center;
+font-family: sans-serif;
+color: white;
+}
+
+#mithayi-img{
+height: 200px;
+width: 320px;
+box-sizing: border-box;
+float: left;
+margin-left: 20px;
+border: 5px solid white;
+padding: 10px;
+}
+
+#price_table{
+border-style: solid;
+border-color: #ff007d;
+border-width: 1px;
+width: 600px;
+height: 480px;
+box-sizing: border-box;
+float: right;
+}
+#price_header{
+height: 50px;
+text-align: center;
+border-style: solid;
+border-color: #ff007d;
+border-width: 1px;
+background-color: black;
+color: white;
+font-weight: bold;
+
+}
+#price_list{
+border-style: solid;
+border-color: #ff007d;
+border-width: 1px;
+background-color: #ff007d;
+}
+#Sweets_name{
+	font-size: 18px;
+	font-family: century gothic;
+	color: white;
+}
+
+
+
+fieldset{
+	width: 720px;
+	height: 720px;
+	margin-top: 50px;
+	border: 1px solid black;
+	float: left;
+	box-sizing: border-box;
+
+}
+#form_area{
+	width: 100%;
+	height: 45%;
+	box-sizing: border-box;
+	margin-top: 5px;
+
+}
+#Aaddress{
+	width: 90%;
+	height: 100px;
+
+}
+
+#submit{
+	padding: 10px;
+}
+#aside{
+	width: 600px;
+height: 720px;
+border: 1px solid black;
+float: right;
+box-sizing: border-box;
+margin-top: 50px;
+}
+#about{
+	font-family: sans-serif;
+	text-align: center;
+}
+#about_us{
+	color: #332232;
+	font-family: sans-serif;
+	text-align: justify;
+	padding: 22px;
+}
+
+
+
+
+
+#sweets_image_header{
+	background-color: #ff007d;
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+	float: left;
+	margin-top: 15px;
+	border-radius: 50px;
+
+}
+#More_Sweets{
+ text-align: center;
+ font-family: sans-serif;
+ text-align: center;
+margin: 0;
+padding: 0;
+margin-top: 10px;
+}
+
+
+
+
+#sweet_product{
+	width: 19.55555%;
+	height: 250px;
+	box-sizing: border-box;
+	float: left;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+#submit_btn{
+ width: 120px;
+ height: 30px;
+ background-color: white;
+ margin-top: 5px;
+ margin-left: 70px;
+ margin-bottom: 5px;
+ border-color: #ccc;
+}
+footer{
+	width: 100%;
+	height: 250px;
+	box-sizing: border-box;
+	background-color: black;
+	float: left;
+}
+#about_footer{
+width: 400px;
+height: 200px;
+box-sizing: border-box;
+float: left;
+/*border: 1px solid white;
+*/margin-top: 20px;
+}
+
+#contact_footer{
+
+width: 400px;
+height: 200px;
+box-sizing: border-box;
+float: right;
+/*border: 1px solid white;
+*/margin-top: 20px;
+}
+
+
+
+#our_contact_box{
+color: white;
+font-family: sans-serif;
+padding-left: 10px;
+}
+
+
+
+
+#contac_number{
+color: white;
+font-family: sans-serif;
+padding-left: 10px;
+}
+#About_footer_box{
+color: white;
+font-family: sans-serif;
+padding-left: 10px;
+}
+#our_footer_paragraph{
+color: white;
+font-family: sans-serif;
+padding-left: 10px;
+}
+#devloper{
+color: white;
+float: left;
+clear: left;
+margin-left: 45%;
+}
+</style>
+ 
+</head>
+<body>
+<header>
+	<h1 id="brand_name">Sweet Shop</h1>
+	<p id="slogan"> India Number one Sweet Shop </p>
+</header>
+<!-- header end -->
+<nav>
+	<form>
+	<input type="search" name="search" id="Search_box" placeholder="Search This Site" />
+	<input type="submit" name="Search Here"  id="Search_button">
+	</form>
+	<table  id="nav_bar">
+		<tr>
+			<td id="nav_box"><a href="">Home</a></td>
+			<td id="nav_box"><a href="Sweet.html">Sweets </a></td>
+			<td id="nav_box"><a href="">Bekaris </a></td>
+            <td id="nav_box"><a href="#about_footer">About Us </a></td>
+</a>
+			<td id="nav_box"><a href="#contact_footer">Contact Us </a></td>
+
+		</tr>
+	</table>
+</nav>
+<!-- nav end -->
+<section>
+	<address id="first_address">
+		Office : Sehra Paliganj Patna Bihar 801110
+	</address>
+	<address id="first_mobile">
+		Mobile No : 9671432744
+	</address>
+
+	<div id="our_sweet">			
+		<h1 id="our_header">Our Sweet Shop</h1>
+		<img src="1.jpg" id="mithayi-img">
+		<img src="2.jpg" id="mithayi-img">
+        <img src="3.jpg" id="mithayi-img">
+        <img src="4.jpg" id="mithayi-img">
+
+	</div>
+
+	
+		<table id="price_table">
+			<tr>
+				<td id="price_header">Product </td>
+				<td id="price_header">Price</td>
+
+              </tr>
+			<tr>
+				<td id="price_list">
+					
+
+					<ol id="Sweets_name">
+						<li>Gulab Jamun</li>
+						<hr color="white"/>
+						<li>Chhena</li>
+						<hr color="white"/>
+						<li>KALA Jamun</li>
+						<hr color="white"/>
+						<li>LADU</li>
+						<hr color="white"/>
+						<li>BARPHI</li>
+						<hr color="white"/>
+                        <li>Sonpapri</li>
+                        <hr color="white"/>
+                        <li>Kalakand</li>
+                        <hr color="white"/>
+                        <li>Rajbhog</li>
+                        <hr color="white"/>
+                        <li>Rasogulla</li>
+                        <hr color="white"/>
+
+
+
+					</ol>
+				</td>
+				<td id="price_list">
+					<ol id="Sweets_name">
+						<li>50/p</li>
+						<hr color="white"/>
+						<li>40/p</li>
+						<hr color="white"/>
+						<li>50/p</li>
+						<hr color="white"/>
+						<li>250/kg</li>
+						<hr color="white"/>
+						<li>350/kg</li>
+						<hr color="white"/>
+						<li>250/kg</li>
+                        <hr color="white"/>
+                        <li>40/p</li>
+                        <hr color="white"/>
+                        <li>40/p</li>
+                        <hr color="white"/>
+                        <li>40/p</li>
+                        <hr color="white"/>
+
+
+
+					</ol>
+
+				</td>
+
+			</tr>
+		</table>
+		<!-- order Form -->
+		<fieldset id="form_section">
+			<legend>		Order Online	</legend>
+
+				<form>
+					<br><br>
+					Byer Name
+					<br><br>
+					<input type="text" name="name" id="form_area">
+					<br><br>
+					Mobile
+					<br><br>
+				    <input type="number" name="mobile" id="form_area">
+				    <br/><br>
+				    Choose Sweets
+				    <br><br>
+				    <select>
+				    	<option>Gulab Jamun</option>
+                        <option>Kala Jamun</option>
+				    	<option>Rasgula</option>
+				    	<option>Rasmalyai</option>
+				    	<option>Sonpapari</option>
+				    	<option>Rajbogh</option>
+				    	<option>Jalebhi</option>
+				    	<option>Chhena</option>
+				    	<option>Barphi</option>
+				    	<option>Kakand</option>
+
+				    </select>
+                   <br><br>
+                   Quantity
+                   <br><br>
+                   <input type="text" name="Quantity" id="form_area">
+                   <br><br>
+                   Aaddress
+                   <br><br>
+                   <textarea name="address" id="Aaddress">
+                   	
+                   </textarea>
+                   <br><br>
+                   <input type="submit" name="submit" value="Order Now" id="submit">
+				</form>
+
+		</fieldset>
+           <div id="aside">
+           	<h1 id="about">About us</h1>
+           	<hr>
+           	<p id="about_us">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+           	tempor incididunt ut labore et dolore magna aliqua. Ut enim t dot dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim lore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim ad minim veniam,t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua.Ut enim t dolore magna aliqua. Ut enim 
+           	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat nont dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim t dolore magna aliqua. Ut enim	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+
+           <div id="sweets_image_header">
+           	<h1 id="More_Sweets">More Sweets</h1>
+           </div>
+
+           <div id="sweet_product" >
+           	
+           	<img src="barfi.jpg" height="200px" width="280px">
+           <a href="#form_section">	<input type="submit" name="" id="submit_btn" value="Shop Now"></a>
+           </div>
+           <div id="sweet_product">
+           	<img src="gulab.jpg" height="200px" width="280px">
+            <a href="#form_section"> <input type="submit" name="" id="submit_btn" value="Shop Now"></a>
+           </div>
+           <div id="sweet_product">
+           	<img src="laddu.jpg" height="200px" width="280px">
+            <a href="#form_section"><input type="submit" name="" id="submit_btn" value="Shop Now"></a>
+           </div>
+           <div id="sweet_product">
+           	<img src="sweets.jpg" height="200px" width="280px">
+            <a href="#form_section"> <input type="submit" name="" id="submit_btn" value="Shop Now"></a>
+           </div>
+           <div id="sweet_product">
+           	<img src="chhena.png" height="200px" width="280px">
+    <a href="#form_section"><input type="submit" name="" id="submit_btn" value="Shop Now"></a>
+           </div>
+</section>
+<footer>
+	<div id="about_footer">
+		<h1 id="our_contact_box">Conact Us</h1>
+		<address id="contac_number">
+			Website: Swwtshop.com<br>
+			Email: Sweetshop@gmailcom<br>
+			Contact: 8968965687<br>
+			Sehra Paliganj Patna Bihar<br>
+		</address>
+	</div>
+	<div id="contact_footer">
+   <h1 id="About_footer_box">About Us</h1>
+ <p id="our_footer_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+ cillum dolore eu fugiat nulla pariatur.
+	</div>
+
+	<address id="devloper">Devloped By Minkuwap</address>
+</footer>
+</body>
+</html>
